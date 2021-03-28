@@ -7,10 +7,10 @@ module.exports = (app) => {
   app.log.info("Yay, the app was loaded!");
 
   app.on("issues.opened", async (context) => {
-    //Actual Example pull request
     const issueComment = context.issue({
       body: "Thanks for opening this issue!",
     });
+    //Trying some stuff
     return context.octokit.issues.createComment(issueComment);
   });
 
