@@ -7,7 +7,7 @@ module.exports = (app) => {
   app.log.info("Yay, the app was loaded!");
 
   app.on("issues.opened", async (context) => {
-    //Example pull request
+    //Actual Example pull request
     const issueComment = context.issue({
       body: "Thanks for opening this issue!",
     });
